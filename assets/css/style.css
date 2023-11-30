@@ -1,0 +1,98 @@
+
+
+.custom-navbar{
+    height: 10vh;
+    background: linear-gradient(to right, #476df6, #253f9b, #0f327c);
+    margin: 1vh;
+    min-height: 65px;
+
+}
+
+.navbar-text{
+    font-size: clamp(18px, 4vh, 30px);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#cityInput,#searchBtn {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 5px;
+}
+
+#searchBtn{
+    margin-bottom: 15px;
+    color: white;
+    background-color: #476df6;
+    
+}
+
+.custom-border-bottom {
+    border-bottom: 2px solid;
+    margin-right: 1vh; 
+}
+
+#cityButtonsList li{
+    margin: 1vh;
+}
+
+.cityButtons{
+    justify-content: center;
+}
+
+.button-secondary{
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+#forecast{
+    min-height: 300px;
+}
+
+#currentDay{
+    min-height: 200px;
+}
+#currentDay, #forecast{
+    margin-left: 5px;
+  }
+
+  #currentDay p{
+    margin-left: 10px;
+  }
+#forecastBoxes{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.indivBoxes{
+    padding: 5px;
+    border: #000000, 5px;
+    background-color: rgb(53, 53, 141);
+    margin: 5px;
+    color: white;
+}
+
+
+
+
+@media (max-width: 767px) {
+    #cityButtonsList {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    #cityButtonsList li {
+      flex: 0 0 calc(33.33% - 10px); 
+      margin: 5px;
+      
+    }
+
+    #currentDay, #forecast{
+        margin-left: 0px;
+      }
+  }
+  
